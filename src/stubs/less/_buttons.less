@@ -1,0 +1,24 @@
+.btn {
+    outline: none;
+    text-decoration: none;
+    @apply .uppercase .px-4 .py-3 .rounded .tracking-wide .inline-block;
+    transition: box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease,
+        transform 0.15s ease;
+}
+.btn:focus {
+    outline: 4px auto #2779bd !important;
+}
+
+.btn-shadow {
+    .btn;
+    outline: none;
+    @apply .shadow-md;
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+            0 3px 6px rgba(0, 0, 0, 0.08);
+    }
+    &:focus {
+        outline: 4px auto #2779bd !important;
+    }
+}

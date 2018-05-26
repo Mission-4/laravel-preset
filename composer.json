@@ -1,0 +1,24 @@
+{
+    "name": "mission4/laravel-preset",
+    "description": "Mission-4 Laravel Preset",
+    "license": "MIT",
+    "keywords": ["laravel", "laravel-preset", "mission-4", "phppirate"],
+    "authors": [
+        {
+            "name": "Sam Podlogar",
+            "email": "sam@podlogar.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr4": {
+            "Mission4\\LaravelPreset": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": "Mission4\\Mission4Preset\\Mission4ServiceProvider"
+        }
+    }
+}
