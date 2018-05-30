@@ -18,7 +18,7 @@
     },
     "extra": {
         "laravel": {
-            "providers": "Mission4\\Mission4Preset\\Mission4ServiceProvider"
+            "providers": "Mission4\\LaravelPreset\\Mission4ServiceProvider"
         }
     }
 }
