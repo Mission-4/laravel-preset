@@ -1,4 +1,5 @@
 {
+    "version": "0.1",
     "name": "mission4/laravel-preset",
     "description": "Mission-4 Laravel Preset",
     "license": "MIT",
