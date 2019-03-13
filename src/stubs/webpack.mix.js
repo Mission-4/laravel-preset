@@ -1,8 +1,17 @@
 let mix = require('laravel-mix')
+require('laravel-mix-purgecss')
 
-require('laravel-mix-tailwind')
+mix.js('resources/js/app.js', 'public/js')
+    .postCss('resources/css/app.css', 'public/css')
+    .options({
+        postCss: [
+            require('postcss-import')(),
+            require('tailwindcss')('./tailwind.js'),
+            require('postcss-nesting')(),
+        ]
+    })
+    .purgeCss()
 
-mix
-    .js('resources/assets/js/app.js', 'public/js')
-    .less('resources/assets/less/app.less', 'public/css')
-    .tailwind()
+if (mix.inProduction()) {
+    mix.version()
+}

@@ -39,16 +39,22 @@ body {
             @apply .bg-grey-lighter;
         }
         &:hover {
-            // @apply .bg-grey-lightest;
+            /*
+            # Uncomment For Table Hover Styles
+            @apply .bg-grey-lightest;
+            */
         }
         td,
         th {
             @apply .py-3 .px-4 .text-grey-darker;
         }
     }
-    // thead tr:hover {
-    //     background: none;
-    // }
+    /*
+    # Uncomment For Table Hover Styles
+    thead tr:hover {
+        background: none;
+    }
+    */
     thead tr th {
         @apply .text-grey-dark .font-semibold;
     }
@@ -63,16 +69,22 @@ body {
             @apply .bg-grey-lighter;
         }
         &:hover {
-            // @apply .bg-grey-lightest;
+            /*
+            # Uncomment For Table Hover Styles
+            @apply .bg-grey-lightest;
+            */
         }
         td,
         th {
             @apply .py-1 .px-2 .text-grey-darker;
         }
     }
-    // thead tr:hover {
-    //     background: none;
-    // }
+    /*
+    # Uncomment For Table Hover Styles
+    thead tr:hover {
+        background: none;
+    }
+    */
     thead tr th {
         @apply .text-grey-dark .font-semibold;
     }

@@ -1,7 +1,7 @@
 .btn {
     outline: none;
     text-decoration: none;
-    @apply .uppercase .px-4 .py-3 .rounded .tracking-wide .inline-block;
+    @apply uppercase px-4 py-3 rounded tracking-wide inline-block;
     transition: box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease,
         transform 0.15s ease;
 }
@@ -10,9 +10,8 @@
 }
 
 .btn-shadow {
-    .btn;
     outline: none;
-    @apply .shadow-md;
+    @apply btn shadow-md;
     &:hover {
         transform: translateY(-1px);
         box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),

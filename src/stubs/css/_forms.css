@@ -1,0 +1,16 @@
+.form-control {
+    outline: none !important;
+    box-sizing: border-box;
+    @apply block border-2 border-grey-lighter font-medium p-3 text-grey-darker bg-grey-lighter w-full rounded-sm appearance-none;
+    &:focus {
+        @apply bg-white;
+    }
+}
+
+.control-label {
+    @apply block font-semibold text-grey-darker mb-2;
+}
+
+.invalid-feedback {
+    @apply mt-2 text-sm text-red font-medium;
+}
