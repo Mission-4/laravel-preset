@@ -1,3 +1,6 @@
+@import '_buttons.css';
+@import '_forms.css';
+
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
@@ -26,9 +29,6 @@ body {
  *
  * @import "tailwindcss/components";
  */
-
-@import '_buttons.less';
-@import '_forms.less';
 
 .table {
     width: 100%;
