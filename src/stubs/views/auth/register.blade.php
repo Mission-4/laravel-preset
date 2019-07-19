@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="bg-white max-w-sm mx-auto mt-8 p-8 shadow-lg rounded">
-    <h2 class="mb-8 font-medium text-grey-darkest text-xxl">Register</h2>
+    <h2 class="mb-8 font-medium text-gray-700 text-2xl">Register</h2>
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
@@ -11,7 +11,7 @@
 
             <input id="name" type="text" name="name" value="{{ old('name') }}"
                 placeholder="John Doe" 
-                class="form-control{{ $errors->has('name') ? ' border-red-lighter' : '' }}" required autofocus />
+                class="form-control{{ $errors->has('name') ? ' border-red-500' : '' }}" required autofocus />
 
             @if ($errors->has('name'))
                 <span class="invalid-feedback">
@@ -25,7 +25,7 @@
 
             <input id="email" type="email" name="email" value="{{ old('email') }}"
                 placeholder="john@example.com" 
-                class="form-control{{ $errors->has('email') ? ' border-red-lighter' : '' }}" required>
+                class="form-control{{ $errors->has('email') ? ' border-red-500' : '' }}" required>
 
             @if ($errors->has('email'))
                 <span class="invalid-feedback">
@@ -39,7 +39,7 @@
 
             <input id="password" type="password" name="password"
                 placeholder="••••••••" 
-                class="form-control{{ $errors->has('password') ? ' border-red-lighter' : '' }}" required>
+                class="form-control{{ $errors->has('password') ? ' border-red-500' : '' }}" required>
 
             @if ($errors->has('password'))
                 <span class="invalid-feedback">
@@ -57,7 +57,7 @@
         </div>
 
         <div class="form-group mb-0">
-            <button type="submit" class="btn-shadow text-white bg-blue">
+            <button type="submit" class="btn-shadow text-white bg-blue-500">
                 {{ __('Register') }}
             </button>
         </div>

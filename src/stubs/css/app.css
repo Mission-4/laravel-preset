@@ -1,18 +1,5 @@
 @import '_buttons.css';
 @import '_forms.css';
-
-/**
- * This injects Tailwind's base styles, which is a combination of
- * Normalize.css and some additional base styles.
- *
- * You can see the styles here:
- * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/preflight";
- */
-
 html,
 body {
     width: 100%;
@@ -20,15 +7,9 @@ body {
     margin: 0;
     padding: 0;
 }
-@tailwind preflight;
 
-/**
- * This injects any component classes registered by plugins.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/components";
- */
+
+@tailwind base;
 
 .table {
     width: 100%;
@@ -36,17 +17,17 @@ body {
     tr {
         @apply .border-b .border-b-2;
         &:nth-child(even) {
-            @apply .bg-grey-lighter;
+            @apply .bg-gray-400;
         }
         &:hover {
             /*
             # Uncomment For Table Hover Styles
-            @apply .bg-grey-lightest;
+            @apply .bg-gray-100;
             */
         }
         td,
         th {
-            @apply .py-3 .px-4 .text-grey-darker;
+            @apply .py-3 .px-4 .text-gray-800;
         }
     }
     /*
@@ -56,7 +37,7 @@ body {
     }
     */
     thead tr th {
-        @apply .text-grey-dark .font-semibold;
+        @apply .text-gray-600 .font-semibold;
     }
 }
 
@@ -66,17 +47,17 @@ body {
     tr {
         @apply .border-b .border-b-2;
         &:nth-child(even) {
-            @apply .bg-grey-lighter;
+            @apply .bg-gray-400;
         }
         &:hover {
             /*
             # Uncomment For Table Hover Styles
-            @apply .bg-grey-lightest;
+            @apply .bg-gray-100;
             */
         }
         td,
         th {
-            @apply .py-1 .px-2 .text-grey-darker;
+            @apply .py-1 .px-2 .text-gray-800;
         }
     }
     /*
@@ -86,7 +67,7 @@ body {
     }
     */
     thead tr th {
-        @apply .text-grey-dark .font-semibold;
+        @apply .text-gray-600 .font-semibold;
     }
 }
 
@@ -94,15 +75,15 @@ body {
     @apply .list-reset .flex .items-center .rounded .shadow .mx-auto .my-6;
 
     .page-item .page-link {
-        @apply .p-2 .no-underline .inline-block .bg-grey-darkest .text-white .cursor-pointer;
+        @apply .p-2 .no-underline .inline-block .bg-gray-900 .text-white .cursor-pointer;
         &:hover {
-            @apply .bg-grey-darker;
+            @apply .bg-gray-800;
         }
     }
     .page-item.disabled .page-link {
-        @apply .text-grey .cursor-default;
+        @apply .text-gray .cursor-default;
         &:hover {
-            @apply .bg-grey-darkest;
+            @apply .bg-gray-900;
         }
     }
     .page-item.active .page-link {
@@ -117,45 +98,4 @@ body {
 }
 
 @tailwind components;
-
-/**
- * Here you would add any of your custom component classes; stuff that you'd
- * want loaded *before* the utilities so that the utilities could still
- * override them.
- *
- * Example:
- *
- * .btn { ... }
- * .form-input { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "components/buttons";
- * @import "components/forms";
- */
-
-/**
- * This injects all of Tailwind's utility classes, generated based on your
- * config file.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/utilities";
- */
-
 @tailwind utilities;
-
-/**
- * Here you would add any custom utilities you need that don't come out of the
- * box with Tailwind.
- *
- * Example :
- *
- * .bg-pattern-graph-paper { ... }
- * .skew-45 { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "utilities/background-patterns";
- * @import "utilities/skew-transforms";
- */

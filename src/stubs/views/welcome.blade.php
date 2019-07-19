@@ -11,19 +11,19 @@
     <body class="font-sans">
         <div class="flex items-center justify-center h-screen">
             <div class="content text-center">
-                <div class="text-5xl uppercase tracking-wide text-blue-darker font-black mb-8">
+                <div class="text-5xl uppercase tracking-wide text-blue-800 font-black mb-8">
                     {{ config('app.name'), 'Laravel' }}
                 </div>
 
                 <div>
                     <a
-                        class="no-underline text-lg text-white uppercase font-semibold bg-blue-dark py-3 px-8 mx-4 rounded-full hover:bg-blue-darker"
+                        class="no-underline text-lg text-white uppercase font-semibold bg-blue-600 py-3 px-8 mx-4 rounded-full hover:bg-blue-800"
                         href="/login"
                         >
                         Log In
                     </a>
                     <a
-                        class="no-underline text-lg text-white uppercase font-semibold bg-blue-dark py-3 px-8 mx-4 rounded-full hover:bg-blue-darker"
+                        class="no-underline text-lg text-white uppercase font-semibold bg-blue-600 py-3 px-8 mx-4 rounded-full hover:bg-blue-800"
                         href="/register"
                         >
                         Sign Up
