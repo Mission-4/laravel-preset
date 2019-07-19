@@ -8,7 +8,7 @@
 - Swapped Bootstrap Views out for Tailwind
 
 
-# Instalation
+# Installation
 
 Install Package
 ```
