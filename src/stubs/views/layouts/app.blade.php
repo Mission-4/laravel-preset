@@ -23,8 +23,8 @@
                 <span class="font-semibold text-xl">{{ config('app.name') }}</span>
             </template>
             <template slot="items">
-                <div class="text-sm lg:flex-grow">
-                    <a href="/home" class="block mt-4 lg:inline-block no-underline lg:mt-0 text-teal-lighter hover:text-white mr-4">
+                <div class="text-base lg:flex-grow">
+                    <a href="/home" class="block mt-4 lg:inline-block no-underline lg:mt-0 text-teal-200 hover:text-white mr-4">
                         Home
                     </a>
                 </div>
@@ -32,7 +32,7 @@
                     @guest
                         <a
                             href="{{ route('register') }}"
-                            class="block mt-4 mr-4 lg:inline-block no-underline lg:mt-0 text-teal-lighter hover:text-white"
+                            class="block mt-4 mr-4 lg:inline-block no-underline lg:mt-0 text-teal-200 hover:text-white"
                             >Register</a>
                         <a
                             href="{{ route('login') }}"
@@ -41,12 +41,12 @@
                     @else
                         <a
                             href="#"
-                            class="block mt-4 mr-4 lg:inline-block no-underline lg:mt-0 text-teal-lighter hover:text-white"
+                            class="block mt-4 mr-4 lg:inline-block no-underline lg:mt-0 text-teal-200 hover:text-white"
                             >{{ auth()->user()->name }}</a>
                         <form action="/logout" class="inline-block" method="post">
                             @csrf
                             <button
-                                class="inline-block no-underline text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0"
+                                class="inline-block no-underline text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 font-semibold hover:bg-white mt-4 lg:mt-0"
                                 >Log Out</button>
                         </form>
                     @endguest
