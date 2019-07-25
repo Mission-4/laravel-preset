@@ -72,7 +72,7 @@ body {
 }
 
 .pagination {
-    @apply .list-reset .flex .items-center .rounded .shadow .mx-auto .my-6;
+    @apply .flex .items-center .rounded .shadow .mx-auto .my-6;
 
     .page-item .page-link {
         @apply .p-2 .no-underline .inline-block .bg-gray-900 .text-white .cursor-pointer;
@@ -81,13 +81,13 @@ body {
         }
     }
     .page-item.disabled .page-link {
-        @apply .text-gray .cursor-default;
+        @apply .text-gray-500 .cursor-default;
         &:hover {
             @apply .bg-gray-900;
         }
     }
     .page-item.active .page-link {
-        @apply .bg-blue;
+        @apply .bg-blue-500;
     }
     .page-item:first-child .page-link {
         border-radius: 4px 0 0 4px;
