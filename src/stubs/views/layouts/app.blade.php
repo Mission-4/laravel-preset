@@ -36,7 +36,7 @@
                             >Register</a>
                         <a
                             href="{{ route('login') }}"
-                            class="inline-block no-underline text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0"
+                            class="inline-block no-underline text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-200 hover:bg-white mt-4 lg:mt-0"
                             >Log In</a>
                     @else
                         <a

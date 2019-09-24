@@ -1,7 +1,7 @@
 .btn {
     outline: none;
     text-decoration: none;
-    @apply uppercase px-4 py-3 rounded tracking-wide inline-block;
+    @apply uppercase px-6 py-2 text-sm rounded tracking-wide inline-block;
     transition: box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease,
         transform 0.15s ease;
 }

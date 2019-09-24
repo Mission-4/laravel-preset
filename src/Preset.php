@@ -60,12 +60,13 @@ class Preset extends LaravePreset
     {
         return array_merge(
             [
-                'vue-router' => '^3.0.1',
-                'vuex' => '^3.0.1',
-                'laravel-mix-purgecss' => '^2.2.0',
-                'postcss-nesting' => '^5.0.0',
-                'postcss-import' => '^11.1.0',
-                'tailwindcss' => '>=0.5.3'
+                'vue-router' => '^3.1',
+                'vuex' => '^3.1',
+                'vue' => '^2.6',
+                'laravel-mix-purgecss' => '^4.1',
+                'postcss-nesting' => '^7.0',
+                'postcss-import' => '^12.0',
+                'tailwindcss' => '^1.1'
             ],
             Arr::except($packages, [
                 'bootstrap',
