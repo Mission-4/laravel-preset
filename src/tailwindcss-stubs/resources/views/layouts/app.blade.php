@@ -11,13 +11,15 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    
+
     <!-- Styles -->
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="bg-gray-100 h-screen antialiased leading-none">
+<body class="bg-gray-100 h-screen antialiased leading-none dark:bg-cool-gray-900 dark:text-cool-gray-200">
     <div id="app">
-        <nav class="bg-blue-900 shadow mb-8 py-6">
+        <nav class="bg-cool-gray-800 shadow mb-8 py-6 dark:bg-cool-gray-700">
             <div class="container mx-auto px-6 md:px-0">
                 <div class="flex items-center justify-center">
                     <div class="mr-6">
